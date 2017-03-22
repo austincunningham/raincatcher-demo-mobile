@@ -17,7 +17,10 @@ angular.module('wfm-mobile', [
 , require('angular-ui-router')
 , require('angular-material'),
   require('fh-wfm-sync')
-, require('fh-wfm-message')
+, require('fh-wfm-message-angular')({
+  mode: 'user',
+  mainColumnViewId: 'content@app'
+})
 , require('fh-wfm-mediator')
 , require('fh-wfm-workorder-angular')({
   mode: "user",
